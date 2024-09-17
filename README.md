@@ -58,13 +58,14 @@ This project involved developing multiple anomaly detection models to identify p
    - **Isolation Forest:** Implemented to compare its effectiveness in detecting outliers.
 3. **Evaluation:** Compared different models based on the percentage of detected anomalies and their alignment with business expectations.
 
-### Results and Recommendations
+### Recommendations
 
-- **Anomaly Distribution:** Identified anomalies that may lead to engine malfunctions, providing thresholds for critical features.
-- **Feature Importance:** Utilised mutual information to rank the features based on their influence on anomaly detection.
-- **Suggested Implementations:**
-  - Monitor key engine features (e.g., lubrication oil pressure, engine RPM) closely for predictive maintenance.
-  - Adjust thresholds based on business needs to optimise model performance.
+- **Use the Anomaly Detection Models:** Implement the developed anomaly detection models to alert engineers of potential issues before they escalate, focusing on key features outlined above but not limited to them.
+- **Schedule Regular Maintenance:** Conduct regular maintenance checks based on anomaly reports to ensure engine components are functioning within safe parameters.
+
+While this document identifies features classified as outliers, it is crucial for a domain expert or ship engineer to verify whether these outliers are normal/expected or if they require further investigation into their context.
+
+By adopting these recommendations, the likelihood of engine malfunctions and downtime can be significantly reduced. Proactive maintenance and timely identification of potential issues will lead to more efficient operations, decreased repair costs, and fewer engine failures. This approach not only enhances crew safety but also supports timely deliveries, improving customer satisfaction and ultimately increasing the company's profitability.
 
 ## Summary
 
@@ -75,3 +76,4 @@ Feel free to explore the code and analysis provided in this repository. If you h
 ### Files Included in This Repository
 
 - **Notebook:** A detailed Jupyter Notebook (`Anomaly Detection - Ship Engine Maintenance.ipynb`) containing the full implementation of the anomaly detection models.
+- **MIT LICENCE**
