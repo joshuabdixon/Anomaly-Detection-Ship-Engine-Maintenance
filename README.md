@@ -18,7 +18,7 @@ Based on the analysis, several engine features exhibited more anomalies than oth
 
 These features are crucial for ongoing monitoring as they often indicate potential engine malfunctions when anomalies are detected.
 
-## Statistical Techniques and Libraries
+## Techniques and Libraries
 
 The analysis and anomaly detection process utilise the following statistical techniques and Python libraries:
 
