@@ -35,7 +35,6 @@ The analysis and anomaly detection process utilise the following statistical tec
 - **Pandas:** For data analysis and preprocessing.
 - **Scikit-learn:** For implementing machine learning models (e.g., One-Class SVM, Isolation Forest) and preprocessing (e.g., PCA, scaling).
 - **Matplotlib/Seaborn:** For data visualisation, including histograms and box plots.
-- **IPython:** For enhanced data display in Jupyter Notebooks.
 
 ## Key Variables and Assumptions
 
