@@ -1,6 +1,8 @@
-# Anomalous Activity of a Ship’s Engine
+# Anomalous Activity of a Ship’s Engine - Preliminary
 
 This repository contains the code and analysis for detecting anomalous activity in a ship's engine using statistical and machine learning techniques. The project aims to improve ship maintenance and efficiency by identifying potential engine malfunctions.
+
+Note: The recommendations and conclusions in the code are preliminary. The One-Class SVM and Isolation Forest models will be amended to fit all key features rather than using only the Principal Components. 
 
 ## Problem Statement and Objective
 
