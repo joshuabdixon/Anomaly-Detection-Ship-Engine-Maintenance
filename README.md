@@ -65,12 +65,6 @@ This project involved developing multiple anomaly detection models to identify p
    - **Isolation Forest:** Implemented to compare its effectiveness in detecting outliers.
 3. **Evaluation:** Compared different models based on the percentage of detected anomalies and their alignment with business expectations.
 
-### Conclusion
-
-In this analysis, statistical and machine learning methodologies, including the Interquartile Range (IQR), One-Class SVM, and Isolation Forest, were employed to detect anomalies in a ship's engine functionality. The key features with higher occurrences of anomalies were **Lubrication Oil Temperature, Coolant Pressure, Fuel Pressure,** and **Engine RPM**. This consistency across all analysis methods indicates these features are critical for monitoring engine performance.
-
-Implementing the developed anomaly detection models and scheduling regular maintenance based on anomaly reports can significantly reduce potential engine malfunctions and downtime. These proactive measures will enhance operational efficiency, reduce repair costs, and ensure timely deliveries, ultimately improving profitability and safety.
-
 ## Recommendations
 
 - **Use the Anomaly Detection Models:** Implement the developed anomaly detection models to alert engineers of potential issues before they escalate, particularly for the key features outlined above.
