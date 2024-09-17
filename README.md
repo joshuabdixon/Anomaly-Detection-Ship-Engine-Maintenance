@@ -2,8 +2,6 @@
 
 This repository contains the code and analysis for detecting anomalous activity in a ship's engine using statistical and machine learning techniques. The project aims to improve ship maintenance and efficiency by identifying potential engine malfunctions.
 
-Note: The recommendations and conclusions in the code are preliminary. The One-Class SVM and Isolation Forest models will be amended to fit all key features rather than using only the Principal Components. 
-
 ## Problem Statement and Objective
 
 The efficient operation of a ship's engine is crucial for the supply chain industry. Issues like overheating, poor lubrication, and fuel delivery problems can lead to increased risks, safety hazards, and downtime, impacting revenue. The objective of this project is to develop a robust anomaly detection system to monitor engine performance and predict potential maintenance needs. This can help reduce fuel consumption, prevent safety risks, and ensure timely deliveries.
@@ -68,6 +66,7 @@ This project involved developing multiple anomaly detection models to identify p
 3. **Evaluation:** Compared different models based on the percentage of detected anomalies and their alignment with business expectations.
 
 ## Recommendations
+Note: The recommendations and conclusions in the code are preliminary. The One-Class SVM and Isolation Forest models will be amended to fit all key features rather than using only the Principal Components. 
 
 - **Use the Anomaly Detection Models:** Implement the developed anomaly detection models to alert engineers of potential issues before they escalate, particularly for the key features outlined above.
 - **Schedule Regular Maintenance:** Conduct regular maintenance checks based on anomaly reports to ensure engine components are functioning within safe parameters.
