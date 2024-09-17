@@ -6,7 +6,17 @@ This repository contains the code and analysis for detecting anomalous activity 
 
 The efficient operation of a ship's engine is crucial for the supply chain industry. Issues like overheating, poor lubrication, and fuel delivery problems can lead to increased risks, safety hazards, and downtime, impacting revenue. The objective of this project is to develop a robust anomaly detection system to monitor engine performance and predict potential maintenance needs. This can help reduce fuel consumption, prevent safety risks, and ensure timely deliveries.
 
-Key challenges include identifying rare anomalies (approximately 1-5% of the data) in a vast dataset and developing a model that can detect these issues in real time.
+Key challenges include identifying rare anomalies (approximately 1-5% of the data) in a vast dataset and developing a model that can detect these issues in real-time.
+
+## Key Findings
+
+Based on the analysis, several engine features exhibited more anomalies than others. This was apparent from the exploratory data analysis and remained generally consistent whether statistical or machine learning methodologies were used:
+- **Lubrication Oil Temperature**
+- **Coolant Pressure**
+- **Fuel Pressure**
+- **Engine RPM**
+
+These features are crucial for ongoing monitoring as they often indicate potential engine malfunctions when anomalies are detected.
 
 ## Statistical Techniques and Libraries
 
@@ -25,19 +35,17 @@ The analysis and anomaly detection process utilise the following statistical tec
 - **Pandas:** For data analysis and preprocessing.
 - **Scikit-learn:** For implementing machine learning models (e.g., One-Class SVM, Isolation Forest) and preprocessing (e.g., PCA, scaling).
 - **Matplotlib/Seaborn:** For data visualisation, including histograms and box plots.
+- **IPython:** For enhanced data display in Jupyter Notebooks.
 
 ## Key Variables and Assumptions
 
 The data used for this project comprises six key features continuously monitored to evaluate the engine's performance:
-
-### Key Variables
-
-1. **Engine RPM:** High RPM can indicate overheating or excessive wear, while low RPM suggests potential mechanical issues.
-2. **Lubrication Oil Pressure:** Low pressure may signal insufficient lubrication; high pressure can indicate blockages.
-3. **Fuel Pressure:** High pressure may result in poor engine performance; low pressure suggests possible fuel delivery issues.
-4. **Coolant Pressure:** Low pressure indicates potential leaks; high pressure may signal blockages or head gasket failure.
-5. **Lubrication Oil Temperature:** High temperature can degrade oil quality; low temperature might affect lubrication.
-6. **Coolant Temperature:** High temperature can cause overheating; low temperature may imply suboptimal operating conditions.
+- **Engine RPM:** High RPM can indicate overheating or excessive wear, while low RPM suggests potential mechanical issues.
+- **Lubrication Oil Pressure:** Low pressure may signal insufficient lubrication; high pressure can indicate blockages.
+- **Fuel Pressure:** High pressure may result in poor engine performance; low pressure suggests possible fuel delivery issues.
+- **Coolant Pressure:** Low pressure indicates potential leaks; high pressure may signal blockages or head gasket failure.
+- **Lubrication Oil Temperature:** High temperature can degrade oil quality; low temperature might affect lubrication.
+- **Coolant Temperature:** High temperature can cause overheating; low temperature may imply suboptimal operating conditions.
 
 ### Assumptions
 
@@ -58,22 +66,26 @@ This project involved developing multiple anomaly detection models to identify p
    - **Isolation Forest:** Implemented to compare its effectiveness in detecting outliers.
 3. **Evaluation:** Compared different models based on the percentage of detected anomalies and their alignment with business expectations.
 
-### Recommendations
+### Conclusion
 
-- **Use the Anomaly Detection Models:** Implement the developed anomaly detection models to alert engineers of potential issues before they escalate, focusing on key features outlined above but not limited to them.
+In this analysis, statistical and machine learning methodologies, including the Interquartile Range (IQR), One-Class SVM, and Isolation Forest, were employed to detect anomalies in a ship's engine functionality. The key features with higher occurrences of anomalies were **Lubrication Oil Temperature, Coolant Pressure, Fuel Pressure,** and **Engine RPM**. This consistency across all analysis methods indicates these features are critical for monitoring engine performance.
+
+Implementing the developed anomaly detection models and scheduling regular maintenance based on anomaly reports can significantly reduce potential engine malfunctions and downtime. These proactive measures will enhance operational efficiency, reduce repair costs, and ensure timely deliveries, ultimately improving profitability and safety.
+
+## Recommendations
+
+- **Use the Anomaly Detection Models:** Implement the developed anomaly detection models to alert engineers of potential issues before they escalate, particularly for the key features outlined above.
 - **Schedule Regular Maintenance:** Conduct regular maintenance checks based on anomaly reports to ensure engine components are functioning within safe parameters.
-
+  
 While this document identifies features classified as outliers, it is crucial for a domain expert or ship engineer to verify whether these outliers are normal/expected or if they require further investigation into their context.
 
 By adopting these recommendations, the likelihood of engine malfunctions and downtime can be significantly reduced. Proactive maintenance and timely identification of potential issues will lead to more efficient operations, decreased repair costs, and fewer engine failures. This approach not only enhances crew safety but also supports timely deliveries, improving customer satisfaction and ultimately increasing the company's profitability.
 
-## Summary
-
-This anomaly detection project highlights the use of statistical and machine learning techniques to address real-world challenges in the maritime supply chain. By employing methods like IQR, One-Class SVM, and Isolation Forest, this analysis provides insights for proactive ship engine maintenance. The repository demonstrates expertise in data preprocessing, statistical analysis, and the application of machine learning models for anomaly detection.
-
-Feel free to explore the code and analysis provided in this repository. If you have questions or would like to discuss further, please contact me.
-
-### Files Included in This Repository
+## Files Included in This Repository
 
 - **Notebook:** A detailed Jupyter Notebook (`Anomaly Detection - Ship Engine Maintenance.ipynb`) containing the full implementation of the anomaly detection models.
-- **MIT LICENCE**
+- **License:** MIT License file (`LICENSE`) outlining the terms of use for this project.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
